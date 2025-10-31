@@ -250,6 +250,36 @@ aside{
   color: #000;                   /* Cambia el color del texto */
 }
 
+/* 📱 Para pantallas de celulares (hasta 768px de ancho) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em; /* Reduce el tamaño del título */
+  }
+
+  nav ul {
+    flex-direction: column; /* Cambia el menú horizontal a vertical */
+    align-items: center;
+  }
+
+  .titulo-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  aside {
+    display: none; /* Si quieres ocultarlo en celular */
+  }
+}
+
 
 
 
